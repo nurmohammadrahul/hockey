@@ -2,123 +2,202 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hockey</title>
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
-    <script>
-        tailwind.config = {
-          theme: {
-            extend: {
-              colors: {
-                clifford: '#da373d',
-                'ho-color': '#FF4240',
-              }
-            }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hockey</title>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+            'ho-color': '#FF4240',
           }
         }
-      </script>
-    <style>
-        .manrope {
-            font-family:"Manrope", sans-serif;
-        }
-    </style>
+      }
+    }
+  </script>
+  <style>
+    .manrope {
+      font-family: "Manrope", sans-serif;
+    }
+  </style>
 </head>
 
-<body class="manrope container mx-auto p-4 lg:p-10">
-    <header class="md:container md:mx-auto">
-        <nav>
-            <div class="navbar bg-base-100">
-                <div class="navbar-start">
-                    <div class="dropdown">
-                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
-                                stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M4 6h16M4 12h8m-8 6h16" />
-                            </svg>
-                        </div>
-                        <ul tabindex="0"
-                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 text-base">
-                            <li><a class="text-ho-color">Home</a></li>
-                            <li><a>About</a></li>
-                            <li><a>Pages</a></li>
-                            <li><a>Blog</a></li>
-                            <li><a>Contact</a></li>
-                        </ul>
-                    </div>
-                    <a class="btn btn-ghost text-4xl">Hockey<span class="text-ho-color">'</span>s</a>
-                </div>
-                <div class="navbar-center hidden lg:flex">
-                    <ul class="menu menu-horizontal px-1 text-base">
-                        <li><a class="text-ho-color">Home</a></li>
-                        <li><a>About</a></li>
-                        <li><a>Pages</a></li>
-                        <li><a>Blog</a></li>
-                        <li><a>Contact</a></li>
-                    </ul>
-                </div>
-                <div class="navbar-end">
-                    <div class="flex flex-row space-x-3 justify-center items-center">
-                        <img class="invisible lg:visible" src="Images/Frame.png" alt="">
-                    <button class="btn bg-ho-color text-white">Get Ticket</button>
-                    </div>
-                </div>
+<body class="manrope container mx-auto p-0 lg:p-10">
+  <header class="md:container md:mx-auto">
+    <nav>
+      <div class="navbar bg-base-100">
+        <div class="navbar-start">
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+              </svg>
             </div>
-        </nav>
-        <div class="">
-            <div class="carousel w-full lg:h-[500px]">
-                <div id="slide1" class="carousel-item relative w-full">
-                  <img src="Images/1.png" class="w-full " />
-                  <div class="absolute flex transform -translate-y-1/2 left-5 right-5 top-1/2">
-                    <a href="#slide4" class="btn btn-circle">❮</a> 
-                    <a href="#slide2" class="btn btn-circle">❯</a>
-                  </div>
-                 
-                </div> 
-                <div id="slide2" class="carousel-item relative w-full">
-                  <img src="https://daisyui.com/images/stock/photo-1609621838510-5ad474b7d25d.jpg" class="w-full" />
-                  <div class="absolute flex  transform -translate-y-1/2 left-5 right-5 top-1/2">
-                    <a href="#slide1" class="btn btn-circle">❮</a> 
-                    <a href="#slide3" class="btn btn-circle">❯</a>
-                  </div>
-                </div> 
-                <div id="slide3" class="carousel-item relative w-full">
-                  <img src="https://daisyui.com/images/stock/photo-1414694762283-acccc27bca85.jpg" class="w-full" />
-                  <div class="absolute flex  transform -translate-y-1/2 left-5 right-5 top-1/2">
-                    <a href="#slide2" class="btn btn-circle">❮</a> 
-                    <a href="#slide4" class="btn btn-circle">❯</a>
-                  </div>
-                </div> 
-                <div id="slide4" class="carousel-item relative w-full">
-                  <img src="https://daisyui.com/images/stock/photo-1665553365602-b2fb8e5d1707.jpg" class="w-full" />
-                  <div class="absolute flex  transform -translate-y-1/2 left-5 right-5 top-1/2">
-                    <a href="#slide3" class="btn btn-circle">❮</a> 
-                    <a href="#slide1" class="btn btn-circle">❯</a>
-                  </div>
-                </div>
-              </div>
-              <div class="bg-black w-full lg:w-[450px] flex flex-col rounded-xl p-5 mx-auto lg:transform lg:-translate-y-40 lg:translate-x-56">
-                <h2 class="font-bold text-2xl text-white">Meet all the heroes from the field</h2>
-                <p class="text-white">
-                    They All are aour heroes.we have to respect them.
-                </p>
+            <ul tabindex="0"
+              class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 text-base">
+              <li><a class="text-ho-color">Home</a></li>
+              <li><a>About</a></li>
+              <li><a>Pages</a></li>
+              <li><a>Blog</a></li>
+              <li><a>Contact</a></li>
+            </ul>
+          </div>
+          <a class="btn btn-ghost text-4xl">Hockey<span class="text-ho-color">'</span>s</a>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1 text-base">
+            <li><a class="text-ho-color">Home</a></li>
+            <li><a>About</a></li>
+            <li><a>Pages</a></li>
+            <li><a>Blog</a></li>
+            <li><a>Contact</a></li>
+          </ul>
+        </div>
+        <div class="navbar-end">
+          <div class="flex flex-row space-x-3 justify-center items-center">
+            <img class="invisible lg:visible" src="Images/Frame.png" alt="">
+            <button class="btn bg-ho-color text-white">Get Ticket</button>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="mb-5">
+      <div class="carousel w-full lg:h-[500px]">
+        <div id="slide1" class="carousel-item relative w-full">
+          <img src="Images/1.png" class="w-full " />
+          <div class="absolute flex transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide4" class="btn btn-circle">❮</a>
+            <a href="#slide2" class="btn btn-circle">❯</a>
+          </div>
 
-              </div>
-             
+        </div>
+        <div id="slide2" class="carousel-item relative w-full">
+          <img src="https://daisyui.com/images/stock/photo-1609621838510-5ad474b7d25d.jpg" class="w-full" />
+          <div class="absolute flex  transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide1" class="btn btn-circle">❮</a>
+            <a href="#slide3" class="btn btn-circle">❯</a>
+          </div>
+        </div>
+        <div id="slide3" class="carousel-item relative w-full">
+          <img src="https://daisyui.com/images/stock/photo-1414694762283-acccc27bca85.jpg" class="w-full" />
+          <div class="absolute flex  transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide2" class="btn btn-circle">❮</a>
+            <a href="#slide4" class="btn btn-circle">❯</a>
+          </div>
+        </div>
+        <div id="slide4" class="carousel-item relative w-full">
+          <img src="https://daisyui.com/images/stock/photo-1665553365602-b2fb8e5d1707.jpg" class="w-full" />
+          <div class="absolute flex  transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide3" class="btn btn-circle">❮</a>
+            <a href="#slide1" class="btn btn-circle">❯</a>
+          </div>
+        </div>
+      </div>
+      <div
+        class="bg-black w-full lg:w-[450px] flex flex-col rounded-xl p-5 mx-auto lg:transform lg:-translate-y-40 lg:translate-x-56">
+        <h2 class="font-bold text-2xl text-white">Meet all the heroes from the field</h2>
+        <p class="text-white">
+          They All are aour heroes.we have to respect them.
+        </p>
+
+      </div>
+
+    </div>
+
+  </header>
+  <main>
+    <section>
+      <div class="border-dotted border-y-2 border-gray-400 flex flex-col space-y-4 text-center p-5">
+        <h2 class="font-semibold text-4xl">Professional Hockeys Club</h2>
+        <p>The facility we are having now . We would always by your side. </p>
+
+      </div>
+      <div class="flex  flex-col lg:flex-row p-5 justify-around">
+        <div class="p-4 space-y-5 flex flex-col items-center justify-center">
+          <div class="radial-progress text-red-800 rotate-180" style="--value:70; --size:8rem; --thickness: .875rem;"
+            role="progressbar"><span class="text-black font-bold rotate-180">70%</span></div>
+
+          <h2 class="text-lg font-semibold">Prayer Facility</h2>
+          <p>The players on board</p>
+        </div>
+        <div class="p-4 space-y-5 flex flex-col items-center justify-center">
+          <div class="radial-progress text-indigo-800 rotate-180" style="--value:90; --size:8rem; --thickness: .875rem;"
+            role="progressbar"><span class="text-black font-bold rotate-180">90%</span></div>
+
+          <h2 class="text-lg font-semibold">Experienced Coach</h2>
+          <p>The coaches on board</p>
+        </div>
+        <div class="p-4 space-y-5 flex flex-col items-center justify-center">
+          <div class="radial-progress text-purple-950 rotate-180" style="--value:88; --size:8rem; --thickness: .875rem;"
+            role="progressbar"><span class="text-black font-bold rotate-180">88%</span></div>
+
+          <h2 class="text-lg font-semibold">Senior Player</h2>
+          <p>The experience we have on the field</p>
+        </div>
+        <div class="p-4 space-y-5 flex flex-col  items-center justify-center">
+          <div class="radial-progress text-yellow-700 rotate-180" style="--value:99; --size:8rem; --thickness: .875rem;"
+            role="progressbar"><span class="text-black font-bold rotate-180">99%</span></div>
+
+          <h2 class="text-lg font-semibold">Training Ground</h2>
+          <p>The Ground quality we assure</p>
         </div>
 
-    </header>
-    <main>
 
-    </main>
-    <footer>
+      </div>
+    </section>
+    <section>
+      <div class="border-dotted border-y-2 border-gray-400 flex flex-col space-y-4 text-center p-5">
+        <h2 class="font-semibold text-4xl">Program Sections</h2>
+        <p>Currently we are working on this projects. you can join </p>
 
-    </footer>
+      </div>
+      <div class="flex flex-col lg:flex-row justify-center items-center mx-auto my-10 gap-10">
+        <div
+          class="container card  w-full bg-cover bg-[linear-gradient(45deg,rgba(0,0,0,0.4),rgba(0,0,0,0.1)),url('Images/2.png')] text-primary-content bg-no-repeat">
+          <div class="card-body flex justify-start items-start flex-col space-y-5 mt-20 p-10">
+            <h2 class="card-title text-white">Junior Program</h2>
+            <p class="text-white">USA Hockey's junior program provides opportunities for players ages 16-to-20 to hone and enhance their
+              skills.</p>
+              <button class="btn bg-ho-color border-none text-white">Register Now</button>
+
+          </div>
+        </div>
+        <div
+          class="container card w-full bg-cover bg-[linear-gradient(45deg,rgba(0,0,0,0.4),rgba(0,0,0,0.1)),url('Images/3.png')] text-primary-content bg-no-repeat">
+          <div class="card-body flex justify-center items-start flex-col space-y-5 mt-20 p-10">
+            <h2 class="card-title text-white">Senior Program</h2>
+            <p class="text-white">USA Hockey's junior program provides opportunities for players ages 16-to-20 to hone and enhance their
+              skills .</p>
+              <button class="btn bg-ho-color border-none text-white">Register Now</button>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div
+        class="container card  w-full bg-cover bg-[linear-gradient(45deg,rgba(0,0,0,0.4),rgba(0,0,0,0.1)),url('Images/4.png')] text-primary-content bg-no-repeat">
+        <div class="card-body flex justify-center items-start flex-col  space-y-5 mt-28 p-10">
+          <h2 class="card-title text-white">Professional Program</h2>
+          <p class="text-white">USA Hockey's junior program provides opportunities for players ages 16-to-20 to hone and enhance their
+            skills.</p>
+            <button class="btn bg-ho-color border-none text-white">Register Now</button>
+
+        </div>
+      </div>
+      </div>
+    </section>
+
+  </main>
+  <footer>
+
+  </footer>
 </body>
 
 </html>
