@@ -50,7 +50,7 @@
               <li><a>Contact</a></li>
             </ul>
           </div>
-          <a class="btn btn-ghost text-4xl">Hockey<span class="text-ho-color">'</span>s</a>
+          <a class="btn btn-ghost text-3xl font-bold">Hockey<span class="text-ho-color mx-[-10px]">’</span>s</a>
         </div>
         <div class="navbar-center hidden lg:flex">
           <ul class="menu menu-horizontal px-1 text-base">
@@ -460,18 +460,18 @@
       <div>
         <div class="hero min-h-screen ">
           <div class="hero-content flex-col lg:flex-row">
-            <div class=" flex flex-col gap-6 rounded-lg border-2 lg:p-5 border-gray-200 text-center lg:text-left">
-              <div class="bg-red-200 p-5 rounded-lg flex flex-col items-center justify-center lg:items-start">
+            <div class=" flex flex-col gap-6 rounded-lg border-2 p-2 lg:p-5 border-gray-200 text-left">
+              <div class="bg-red-200 p-5 rounded-lg flex flex-col items-start">
                 <img src="Images/Group 1171275317.png" alt="">
                 <p>Phone Number : </p>
                 <h2 class="text-2xl font-bold">(+62) 123-321-543</h2>
               </div>
-              <div class="bg-zinc-300 p-5 rounded-lg flex flex-col items-center justify-center lg:items-start">
+              <div class="bg-zinc-300 p-5 rounded-lg flex flex-col items-start">
                 <img src="Images/Group 1171275318.png" alt="">
                 <p>Email : </p>
                 <h2 class="text-2xl font-bold">hockeys@support.com</h2>
               </div>
-              <div class="bg-orange-200 p-5 rounded-lg flex flex-col items-center justify-center lg:items-start">
+              <div class="bg-orange-200 p-5 rounded-lg flex flex-col items-start">
                 <img src="Images/Group 1171275321.png" alt="">
                 <p>Location : </p>
                 <h2 class="text-2xl font-bold">152/1 Mohakhali Wireless Gate</h2>
@@ -507,11 +507,11 @@
                   <input type="number" placeholder="Enter your phone number" class="input input-bordered bg-gray-100"
                     required />
                 </div>
-                <div class="form-control">
+                <div class="form-control lg:col-span-2">
                   <label class="label">
                     <span class="label-text font-extrabold text-3xl">Message</span>
                   </label>
-                  <textarea class="textarea textarea-bordered h-40 bg-gray-100" placeholder="Message"></textarea>
+                  <textarea class="textarea textarea-bordered h-40  bg-gray-100" placeholder="Message"></textarea>
                 </div>
 
 
@@ -535,9 +535,11 @@
     </section>
 
   </main>
-  <footer class="footer p-16 bg-black text-white">
-    <aside>
+  <footer class="bg-black text-white p-10">
+   <div class="flex flex-col lg:flex-row">
+    <div class="flex flex-col space-y-4 w-full lg:w-1/4 items-center mb-5 lg:items-start">
       <h2 class="text-4xl font-semibold">Get In Touch</h2>
+      <p>Get to know about us</p>
       <div class="flex space-x-2">
         <img src="Images/Frame (3).png" alt="">
         <p>hockeys@support.com</p>
@@ -548,33 +550,39 @@
         <p>(+62) 123-321-543</p>
 
       </div>
-     
-    </aside> 
-    <nav class="flex lg:space-x-52">
-      <nav class="flex flex-1 flex-col mr-10">
-        <header class="footer-title">Services</header> 
-        <a class="link link-hover">Branding</a>
-        <a class="link link-hover">Design</a>
-        <a class="link link-hover">Marketing</a>
-        <a class="link link-hover">Advertisement</a>
-      </nav> 
-      <nav class="flex flex-1 flex-col">
-        <header class="footer-title">Company</header> 
-        <a class="link link-hover">About us</a>
-        <a class="link link-hover">Contact</a>
-        <a class="link link-hover">Jobs</a>
-        <a class="link link-hover">Press kit</a>
-      </nav> 
-    </nav>
-   
-    <nav>
-      <header class="footer-title">Legal</header> 
-      <a class="link link-hover">Terms of use</a>
-      <a class="link link-hover">Privacy policy</a>
-      <a class="link link-hover">Cookie policy</a>
-    </nav>
+    </div>
+    <div class="flex w-full lg:w-1/2 text-center mb-5 lg:text-start">
+      <div class="flex flex-1 flex-col space-y-2">
+        <h2 class="text-xl font-bold">Company</h2>
+        <p>About us</p>
+        <p>Leadership</p>
+        <p>Career</p>
+        <p>News and Article</p>
+        <p>Legal Notice</p>
+
+      </div>
+      <div class="flex flex-1 flex-col space-y-2">
+        <h2 class="text-xl font-bold">Support</h2>
+        <p>Help Center</p>
+        <p>Ticket</p>
+        <p>FAQ</p>
+        <p>Contact Us</p>
+      </div>
+
+    </div>
+    <div class="space-y-2  text-center lg:text-start">
+      <h2 class="text-xl font-bold">Services</h2>
+        <p>Academy</p>
+        <p>Group Lesson</p>
+        <p>Private Lesson</p>
+        <p>Hocky's for kids</p>
+        <p>Hocky's for Adults</p>
+
+    </div>
+
+   </div>
   </footer>
- 
+  
 </body>
 
 </html>
